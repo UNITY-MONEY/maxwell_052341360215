@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("IMG-20240623-WA0023.jpg");
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      header ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      header ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      header ul li a,
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      .Hero {
+        text-align: center;
+        padding: 50px 30px;
+        color: black;
+      }
+      .search-bar {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .horizotal-scroll-container {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 00 10px rgba(0, 0, 0, 0);
+      }
+      .horizotal-scroll-container {
+        display: inline block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .horizotal-scroll-container img {
+        height: 50px;
+        margin-right: 5px;
+      }
+      .horizotal-scroll-container:hover {
+        overflow-x: scroll;
+      }
+
+      .horizotal-scroll-container::-webkit-scrollbar {
+        height: 10px;
+      }
+      .horizotal-scroll-container::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+      }
+      .horizotal-scroll-container::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }
+      img {
+        height: 200px;
+        display: inline-block;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+      }
+      .tab {
+        padding: 14px 20px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        outline: none;
+      }
+      .tab:hover {
+        background-color: #555;
+      }
+      .tab-content {
+        display: none;
+        padding: 20px;
+        background-color: #fff;
+        flex-grow: 1;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">welcome to my service page</div>
+      <h2>Discover the Future of [Your Service</h2>
+      <form action="https://www.google.com/search" method="get">
+        <input class="search-bar" type="text" name="q" placeholder="search" />
+        <button type="submit">search</button>
+      </form>
+
+      <p>
+        Explore how our innovative solutions can transform your business today
+      </p>
+    </header>
+    <section>
+      <h2>EXplore our richness in books</h2>
+      <div class="horizontal-scroll-container">
+        <div class="tabs">
+          <button class="tab" onclick="showTab(0)">Tab 1</button>
+          <button class="tab" onclick="showTab(1)">Tab 2</button>
+        
+        </div>
+        <div class="tab-content" id="tab1">
+          <h2>Tab 1 Content</h2>
+          <p>This is the content of Tab 1.</p>
+          <h2>EXplore our noble book</h2>
+          <li>
+            <img
+              src="../Ma/sub-buzz-6954-1645488596-14.jpg"
+              alt="sub-buzz-6954-1645488596-14"
+            />
+            <img
+              src="../Ma/bookshop-interior-with-book-shelves-D2MCH9.jpg"
+              alt="bookshop-interior-with-book-shelves-D2MCH9"
+            />
+            <img
+              src="../Ma/newthisweek.jpg"
+              alt="newthisweek"
+            />
+            <img
+              src="../Ma/getty_501794256_2000149020009280253_334740.jpg"
+              alt="getty_501794256_2000149020009280253_334740"
+            />
+            <img
+               src="../Ma/796e933d-a2f0-40a7-a346-c47e9ef0c952-NU2U_Used_Book_Store_3.jpg"
+               alt="Ma/796e933d-a2f0-40a7-a346-c47e9ef0c952-NU2U_Used_Book_Store_3"
+               />
+            <img
+                src="../Ma/books_640x480.jpg"
+                alt="Ma/books_640x480"
+                />  
+                <img
+                    src="../Ma/booksh_noun_002_04113.jpg"
+                    alt="Ma/booksh_noun_002_04113"
+                    />
+                <img  
+                     src="../Ma/sub-buzz-6954-1645488596-14.jpg"
+                     alt="Ma/sub-buzz-6954-1645488596-14"
+                     />
+                <img
+                     src="../Ma/Jackson.jpeg.png"
+                     alt="Ma/Jackson.jpeg.png" 
+                     />      
+          </li>
+      
+            />
+          </li>
+        </div>
+      </div>
+    </section>
+
+    <div class="tab-content" id="tab2">
+      <h2>Tab 2 Content</h2>
+      <p>This is the content of Tab 2.</p>
+      <h2>Explore the best books</h2>
+      <img src="../Ma/300s.jpg" alt="Ma/300s" />
+      <img src="../Ma/348s.jpg" alt="Ma/348s" />
+      <img src="../Ma/books_640x480 (1).jpg" alt="books_640x480 " />
+      <img src="../Ma/books.jpg" alt="book.jpg" />
+      <img src="../Ma/bookshop-on-the-quay-by-patricia-lynch.jpg" alt="bookshop-on-the-quay-by-patricia-lynch"/>
+      <img src="../Ma/300s.jpg" alt="Ma/300s"
+    </div>
+    <div class="nav-buttons">
+      <button onclick="prevTab()">Previous</button>
+      <button onclick="nextTab()">Next</button>
+    </div>
+    <footer>
+      <p>&copy; UNITY-MONEY BOOKSHOP . All rights reserved.</p>
+      <a href="mailto:contact@bnt.com">Contact Us</a>
+    </footer>
+
+    <script>
+      let currentTab = 0;
+      document.addEventListener("DOMContentLoaded", function () {
+        showTab(currentTab);
+      });
+
+      function showTab(n) {
+        const tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach((tab, index) => {
+          tab.classList.remove("active");
+          if (index === n) {
+            tab.classList.add("active");
+          }
+        });
+        currentTab = n;
+      }
+
+      function nextTab() {
+        const tabs = document.querySelectorAll(".tab-content");
+        currentTab = (currentTab + 1) % tabs.length;
+        showTab(currentTab);
+      }
+
+      function prevTab() {
+        const tabs = document.querySelectorAll(".tab-content");
+        currentTab = (currentTab - 1 + tabs.length) % tabs.length;
+        showTab(currentTab);
+      }
+    </script>
+  </body>
+</html>
